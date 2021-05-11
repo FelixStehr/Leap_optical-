@@ -1,0 +1,24 @@
+# Macro file for leap_sims
+#
+/leap_sims/phys/addPhysics emlivermore_polar
+
+# Initialize kernel
+/run/initialize
+
+
+/polarization/manager/verbose 1
+/polarization/volume/set magnetLV 0. 0. 1.
+/polarization/volume/list
+#
+# Default kinematics:
+# electron 60 MeV in direction (0.,0.,1.)
+#/gun/particle gamma
+#/gun/energy 3 MeV
+#/gun/polarization 0. 0. 1.
+/leapsim/det/setTargThick 2 mm 
+/leapsim/det/setAbsThick 7.5 cm
+/leapsim/det/setDetMat LeadGlass
+
+#/tracking/verbose 0
+/run/printProgress 10
+/run/beamOn 100

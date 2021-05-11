@@ -1,0 +1,17 @@
+
+
+# arguments are the PrcID, the name of the rootfile, the energy [Mev], the  W-targthick [mm], Fe-absthick [cm], Number of Bunches 
+
+
+executable = ./job.sh
+arguments = $(ProcID) 60Mev_$(Number) 60 2 15 $(Number)
+
+#absthick = 15   # absroberthicknes (Fe-Absorber) in cm
+#targthick = 2    # targetthicknes (W-Target) in mm
+
+log = ./log/job_$(ProcID).log
+output = ./out/job_$(ProcID).out
+error = ./err/job_$(ProcID).err
+
+
+queue 1000 Number in 10 100 1000 10000 
