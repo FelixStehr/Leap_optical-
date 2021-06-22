@@ -117,12 +117,6 @@ void DetectorConstruction::DefineMaterials()
   G4Element* O       = new G4Element(name="Oxygen"  ,symbol="O"   , z= 8  , a =  16.000*g/mole);
   G4Element* As      = new G4Element(name="Arsenic" ,symbol="As"  , z= 33 , a =   74.922*g/mole);
 
-
-  G4Element* C      = new G4Element(name="Carbon" ,symbol="C"  , z= 6 , a =   12*g/mole);
-  G4Element* H     = new G4Element(name="Hydrogen" ,symbol="H"  , z= 1 , a =   2*g/mole);
-  G4Element* H2     = new G4Element(name="Hydrogen2" ,symbol="H2"  , z= 2 , a =   4*g/mole);
-
-
   // definde materials
   density = 3.74*g/cm3;
   G4Material* As2O3 = new G4Material(name="Arsenictrioxide", density, ncomponents=2);
