@@ -119,6 +119,8 @@ void DetectorConstruction::DefineMaterials()
 
 
   G4Element* C      = new G4Element(name="Carbon" ,symbol="C"  , z= 6 , a =   12*g/mole);
+  G4Element* H     = new G4Element(name="Hydrogen" ,symbol="H"  , z= 1 , a =   2*g/mole);
+  G4Element* H2     = new G4Element(name="Hydrogen2" ,symbol="H2"  , z= 2 , a =   4*g/mole);
 
 
   // definde materials
